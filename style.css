@@ -1,0 +1,38 @@
+/* กำหนดฟอนต์พื้นฐาน */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ทำให้การคลิก Navbar แล้วเลื่อนลงมามีความสมูท (Smooth Scrolling) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* จัดการขนาดรูป Profile (Requirement 1) */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover; /* ทำให้รูปไม่เบี้ยวเวลาอยู่ในวงกลม */
+}
+
+/* ชดเชยพื้นที่ด้านบนเมื่อกด Navbar Link เพื่อไม่ให้แถบเมนูด้านบนบังหัวข้อ Section */
+.section-padding {
+    scroll-margin-top: 80px; 
+}
+
+/* ตกแต่ง Card ในส่วนของ Skills เมื่อเอาเมาส์ไปชี้ (Hover effect) */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* ปรับระยะห่างของ Ordered List ในส่วน Contact */
+ol li {
+    padding-bottom: 10px;
+}

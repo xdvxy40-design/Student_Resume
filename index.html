@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume - Thanatorn</title>
+    <!-- เรียกใช้ Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- เรียกใช้ไฟล์ CSS ของเราเอง -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- Requirement 9 & 10: Navbar แบบ Toggle และระบบ Navigate (Anchor Link) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1a252c;">
+        <div class="container">
+            <a class="navbar-brand" href="#top">My Resume</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="container text-center mt-5 pt-5">
+        <!-- Requirement 1: รูป Display แบบวงกลม (ใช้คลาส rounded-circle ของ Bootstrap) -->
+        <!-- หมายเหตุ: เปลี่ยนลิงก์รูปนี้เป็นรูปของคุณเอง -->
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&h=200&fit=crop" alt="Profile Picture" class="rounded-circle profile-img border border-3 border-success mb-3 shadow">
+        
+        <!-- Requirement 2: ชื่อ-นามสกุลแบบ h1 -->
+        <h1 class="fw-bold">นายชโยดม เขียวเจริญ (นาย)</h1>
+        
+        <!-- Requirement 3: สาขาวิชาเป็นตัวเอียง (em) -->
+        <h4><em>สาขาวิชา Computer Engineering and Artificial Intelligence (CAI)</em></h4>
+        
+        <!-- Requirement 4: ชื่อคณะ -->
+        <h5>คณะวิศวกรรมศาสตร์และเทคโนโลยี</h5>
+        
+        <!-- Requirement 5: ลิงก์ไปยังสถาบัน -->
+        <p><a href="http://pim.ac.th" target="_blank" class="text-decoration-none text-success fw-bold">สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</a></p>
+        
+        <!-- Requirement 6: ประวัติโดยย่อ -->
+        <p class="lead text-muted mx-auto" style="max-width: 600px;">
+            นักศึกษาชั้นปีที่ 2 ผู้มีความหลงใหลในการเขียนโปรแกรมและการจัดการฐานข้อมูล 
+            มีความมุ่งมั่นที่จะพัฒนาทักษะทางด้าน Web Development เพื่อสร้างสรรค์ผลงานที่เป็นประโยชน์ต่อองค์กรและสังคม
+        </p>
+    </header>
+
+    <!-- Requirement 7: เส้นแบ่งย่อหน้า -->
+    <div class="container"><hr class="my-5 border-success border-2 opacity-50"></div>
+
+    <!-- Requirement 8: Section ต่างๆ -->
+    <main class="container">
+        
+        <!-- About Me Section -->
+        <section id="about" class="mb-5 section-padding">
+            <h2 class="border-bottom border-success pb-2 d-inline-block">เกี่ยวกับตัวฉัน (About Me)</h2>
+            <p class="mt-3">
+                สวัสดีครับ ผมชื่อนาย ปัจจุบันกำลังศึกษาและสนใจเป็นพิเศษในเรื่องโครงสร้างข้อมูล (Data Structures) และการวิเคราะห์ข้อมูล 
+                ในเวลาว่างผมชอบเรียนรู้ภาษาอังกฤษผ่าน AI ฝึกเขียนคำสั่ง SQL และศึกษาเกี่ยวกับเทคโนโลยีใหม่ๆ เช่น Machine Learning 
+                ผมเป็นคนชอบทำงานเป็นทีมและพร้อมเรียนรู้สิ่งใหม่ๆ เสมอ
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-5 section-padding">
+            <h2 class="border-bottom border-success pb-2 d-inline-block">การศึกษา (Education)</h2>
+            <ul class="list-group list-group-flush mt-3 shadow-sm">
+                <li class="list-group-item bg-light">
+                    <strong>ปริญญาตรี (กำลังศึกษา)</strong><br>
+                    สถาบันการจัดการปัญญาภิวัฒน์ - คณะวิศวกรรมศาสตร์และเทคโนโลยี (เกรดเฉลี่ยปัจจุบัน: 3.85)
+                </li>
+                <li class="list-group-item bg-light">
+                    <strong>มัธยมศึกษาตอนปลาย</strong><br>
+                    โรงเรียนบางจันทร์ญาหาญ - แผนกวิทย์-คณิต (พ.ศ. 1862 - 1865)
+                </li>
+            </ul>
+        </section>
+
+        <!-- Requirement 11: การทำเว็บแบบ Responsive (Desktop 4 แถว, Tablet 2 แถว, มือถือ 1 แถว) -->
+        <section id="skills" class="mb-5 section-padding">
+            <h2 class="border-bottom border-success pb-2 d-inline-block mb-4">ทักษะและผลงาน (Skills & Others)</h2>
+            
+            <!-- ใช้ Bootstrap Grid System: 
+                 col-12 = มือถือแสดง 1 แถว (เต็มจอ)
+                 col-md-6 = Tablet แสดง 2 แถว (แบ่งครึ่ง)
+                 col-lg-3 = Desktop แสดง 4 แถว (แบ่ง 4 ส่วน) -->
+            <div class="row g-4 text-center">
+                <!-- ชิ้นที่ 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Web Development</h5>
+                            <p class="card-text">ชำนาญการเขียน HTML, CSS และการใช้ Bootstrap framework</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ชิ้นที่ 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Database</h5>
+                            <p class="card-text">สามารถเขียนคำสั่ง SQL Query (INNER JOIN, Subqueries) ได้เป็นอย่างดี</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ชิ้นที่ 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Tools</h5>
+                            <p class="card-text">ใช้งาน VS Code, Cisco Packet Tracer และ Canva สำหรับออกแบบ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ชิ้นที่ 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Language</h5>
+                            <p class="card-text">ภาษาอังกฤษระดับสื่อสารได้ (ฝึกฝนการสนทนาอย่างต่อเนื่อง)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirement 12: ช่องทางการติดต่อ -->
+        <section id="contact" class="mb-5 section-padding">
+            <h2 class="border-bottom border-success pb-2 d-inline-block">ช่องทางการติดต่อ (Contact)</h2>
+            <div class="card bg-light border-0 shadow-sm mt-3">
+                <div class="card-body">
+                    <!-- Requirement 12.1: ใช้ Ordered List (ol) -->
+                    <ol class="fs-5 lh-lg mb-0">
+                        <!-- Requirement 12.2: อีเมลใช้ภาพแทน @ -->
+                        <!-- ใช้ Data URI SVG ใน src เพื่อสร้างรูป @ ขึ้นมาโดยไม่ต้องพึ่งพาไฟล์รูปภาพภายนอก -->
+                        <li><strong>Email:</strong> 6840010198.stu <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='18' height='18'><text x='0' y='18' font-family='Arial' font-size='20' fill='%23000'>@</text></svg>" alt="at symbol" style="vertical-align: middle;"> pim.ac.th</li>
+                        <!-- Requirement 12.3: เบอร์โทร (หลีกเลี่ยงของจริง) -->
+                        <li><strong>Phone:</strong> 083-817-4587</li>
+                        <!-- Requirement 12.4: ที่อยู่ (หลีกเลี่ยงสถานที่จริง) -->
+                        <li><strong>Address:</strong> 67/76 หมู่บ้านเอื้ออาทร ถนนท่าแพ อำเภอสราวุฒ จังหวัดKyoto 44679</li>
+                        <!-- Requirement 12.5: อื่นๆ -->
+                        <li><strong>GitHub:</strong> github.com/xdvxy40-design</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-white mt-5" style="background-color: #1a252c;">
+        <p class="mb-0">© 2026 My Resume. Created for IP1 Project.</p>
+    </footer>
+
+    <!-- เรียกใช้ Bootstrap 5 JavaScript (จำเป็นสำหรับ Navbar Toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
